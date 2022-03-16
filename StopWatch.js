@@ -5,7 +5,6 @@ window.addEventListener('load',function(){
 
     stopwatch.innerText="0"+hours+":"+"0"+minutes+":"+"0"+seconds;
     
-    var aud=new Audio("beep.mp3");
 
     start.addEventListener('click',function(){
         this.disabled=true;
@@ -49,7 +48,6 @@ window.addEventListener('load',function(){
             }
 
         seconds++;
-        aud.play();
     },1000)//end of set interval
     })//End of start event
 
